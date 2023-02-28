@@ -14,27 +14,31 @@ INSTALLED_APPS = [
 ]
 ``
 
-2. Add 'multi_auth_token.authentication.MultiTokenAuthentication' to 'DEFAULT_AUTHENTICATION_CLASSES' like this:
-```
+2. Add "multi_auth_token.authentication.MultiTokenAuthentication" to "DEFAULT_AUTHENTICATION_CLASSES" like this:
+``
 REST_FRAMWORK = {
 'DEFAULT_AUTHENTICATION_CLASSES': [
 'multi_auth_token.authentication.MultiTokenAuthentication',
 ...
 ]
 }
-```
+``
 
 3. Migrate
 ``
 python manage.py migrate
 ``
 
+
 IMPORTANT
 ---------
-1. DO NOT add 'rest_framework.authtoken' to your INSTALLED_APPS.
-2. DO NOT add 'rest_framework.authentication.TokenAuthentication' to DEFAULT_AUTHENTICATION_CLASSES
+1. DO NOT add "rest_framework.authtoken" to your INSTALLED_APPS.
+2. DO NOT add "rest_framework.authentication.TokenAuthentication" to DEFAULT_AUTHENTICATION_CLASSES
+
+
 TODO
 ----
+
 
 Changelog
 ---------
